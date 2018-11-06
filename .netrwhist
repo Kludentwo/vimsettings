@@ -1,6 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
-let g:netrw_dirhist_1='/home/nigd/jcicontrolapplication/src/jci/jcicontroller/blocks/supervision'
-let g:netrw_dirhist_2='/home/nigd/jcicontrolapplication/src/jci/jcicontroller/blocks'
-let g:netrw_dirhist_3='/home/nigd/jcicontrolapplication/src/jci/jcicontroller/blocks/capacity_control'
-let g:netrw_dirhist_4='/home/nigd/jcicontrolapplication/src/jci/jcicontroller/blocks/process_control'
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/nigd/zephyr/boards/arm/io_module'
+let g:netrw_dirhist_2='/home/nigd/zephyr/drivers/display'
+let g:netrw_dirhist_3='/home/nigd/zephyr/kernel'
+let g:netrw_dirhist_4='/home/nigd/zephyr'
+let g:netrw_dirhist_5='/home/nigd'
+let g:netrw_dirhist_6='/home/nigd/zephyr/drivers/display'

@@ -31,6 +31,8 @@ set t_vb=
 set tm=500
 
 syntax enable
+set background=dark
+let g:solarized_termcolors=256
 
 set encoding=utf8
 set ffs=unix,dos,mac
@@ -51,7 +53,6 @@ set nowrap
 
 set laststatus=2
 
-set t_Co=8
 set number
 "highlight LineNr term=bold cterm=NONE ctermfg=blue ctermbg=NONE gui=NONE guifg=blue guibg=NONE
 
@@ -83,6 +84,13 @@ autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
 
 let g:netrw_liststyle=3
 
+let maplocalleader = "½"
+
 call plug#begin('~/.vim/plugged')
 Plug 'vim-scripts/DoxygenToolkit.vim'
+Plug 'jceb/vim-orgmode', { 'branch': 'v0.6.0' }
+Plug 'mfukar/robotframework-vim'
+Plug 'altercation/vim-colors-solarized'
 call plug#end()
+
+colorscheme solarized
