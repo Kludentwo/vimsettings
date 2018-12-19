@@ -1,3 +1,11 @@
+call plug#begin('~/.vim/plugged')
+Plug 'vim-scripts/DoxygenToolkit.vim'
+Plug 'jceb/vim-orgmode', { 'branch': 'v0.6.0' }
+Plug 'mfukar/robotframework-vim'
+Plug 'altercation/vim-colors-solarized'
+Plug 'chrisbra/vim-kconfig'
+call plug#end()
+
 set nocp
 set history=700
 set so=7
@@ -30,9 +38,10 @@ set novisualbell
 set t_vb=
 set tm=500
 
+let g:solarized_termcolors=256
 syntax enable
 set background=dark
-let g:solarized_termcolors=256
+colorscheme solarized
 
 set encoding=utf8
 set ffs=unix,dos,mac
@@ -76,6 +85,7 @@ function! UpdateTags()
 	call DelTagOfFile(f)
 	let resp = system(cmd)
 endfunction
+
 autocmd BufWritePost *.cpp,*.h,*.c call UpdateTags()
 
 autocmd BufWritePre *.cpp,*.h,*.c :%s/\s\+$//e
@@ -86,11 +96,3 @@ let g:netrw_liststyle=3
 
 let maplocalleader = "½"
 
-call plug#begin('~/.vim/plugged')
-Plug 'vim-scripts/DoxygenToolkit.vim'
-Plug 'jceb/vim-orgmode', { 'branch': 'v0.6.0' }
-Plug 'mfukar/robotframework-vim'
-Plug 'altercation/vim-colors-solarized'
-call plug#end()
-
-colorscheme solarized
